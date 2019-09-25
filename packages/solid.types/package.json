@@ -1,0 +1,68 @@
+{
+  "name": "@solidstudio/solid.types",
+  "version": "1.0.0",
+  "description": "Package with the types of Solid Studio",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "npm-run-all -p clean:*",
+    "clean:dist": "rimraf dist",
+    "clean:cov": "rimraf coverage",
+    "test": "jest test/",
+    "test:coverage": "npm run test -- --coverage",
+    "check-formatting": "prettier --list-different 'src/**/*.{ts,ts,js,json}'",
+    "prettier": "prettier --write './**/*.{ts,tsx,js,json}'",
+    "tslint": "./node_modules/.bin/tslint -p . -c tslint.json",
+    "tslint:fix": "./node_modules/.bin/tslint -p . -c tslint.json --fix",
+    "tslint:ci": "npm run tslint -- -t json -o report-lint.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:solid-studio/solid.types.git"
+  },
+  "author": "Labchain",
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "@types/node": "^10.5.5",
+    "jest": "^25.0.0",
+    "ts-jest": "^23.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.14.0",
+    "typescript": "^3.0.1"
+  },
+  "jest": {
+    "testURL": "http://localhost",
+    "clearMocks": true,
+    "collectCoverageFrom": [
+      "src/*.{ts,js}",
+      "src/**/*.{ts,js}",
+      "!types/**",
+      "!test/**",
+      "!src/index.ts"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 100,
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+      }
+    },
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "web3-utils": "^1.0.0-beta.55"
+  }
+}
