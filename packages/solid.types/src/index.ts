@@ -1,9 +1,9 @@
 class Package {
   start() {
-    return "running";
+    return 'running'
   }
 }
 
-const instance = new Package();
+const instance = new Package()
 
-export default instance;
+export default instance

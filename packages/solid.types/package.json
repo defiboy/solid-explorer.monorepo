@@ -11,7 +11,7 @@
     "test": "jest test/",
     "test:coverage": "npm run test -- --coverage",
     "check-formatting": "prettier --list-different 'src/**/*.{ts,ts,js,json}'",
-    "prettier": "prettier --write './**/*.{ts,tsx,js,json}'",
+    "prettier": "prettier --write 'src/**/*.{ts,tsx,js,json}'",
     "tslint": "./node_modules/.bin/tslint -p . -c tslint.json",
     "tslint:fix": "./node_modules/.bin/tslint -p . -c tslint.json --fix",
     "tslint:ci": "npm run tslint -- -t json -o report-lint.json"
@@ -25,13 +25,13 @@
     "@types/jest": "^23.3.1",
     "@types/node": "^10.5.5",
     "jest": "^25.0.0",
+    "prettier": "^1.18.2",
     "ts-jest": "^23.0.1",
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.14.0",
     "typescript": "^3.0.1"
   },
   "jest": {
-    "testURL": "http://localhost",
     "clearMocks": true,
     "collectCoverageFrom": [
       "src/*.{ts,js}",
@@ -62,7 +62,5 @@
     ],
     "testEnvironment": "node"
   },
-  "dependencies": {
-    "web3-utils": "^1.0.0-beta.55"
-  }
+  "dependencies": {}
 }
