@@ -38,4 +38,3 @@ export interface AbiOutput {
   type: string
   components?: AbiOutput[]
 }
-

@@ -13,11 +13,10 @@ export const buildFakeConnection = ({
 export const buildFakeConnections = (): Connection[] => {
   return [
     buildFakeConnection(),
-    buildFakeConnection(
-      {
-        name: 'Connection 2',
-        url: 'http://localhost:9000',
-        id: 2
-      })
+    buildFakeConnection({
+      name: 'Connection 2',
+      url: 'http://localhost:9000',
+      id: 2
+    })
   ]
 }

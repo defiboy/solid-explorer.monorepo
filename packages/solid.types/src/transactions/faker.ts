@@ -31,11 +31,10 @@ export const buildFakeTransaction = ({
 export const buildFakeTransactions = (): Transaction[] => {
   return [
     buildFakeTransaction(),
-    buildFakeTransaction(
-      {
-        blockNumber: 646895,
-        transactionIndex: 1,
-        connectionId: 2
-      })
+    buildFakeTransaction({
+      blockNumber: 646895,
+      transactionIndex: 1,
+      connectionId: 2
+    })
   ]
 }

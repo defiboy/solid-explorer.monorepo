@@ -1,5 +1,5 @@
 export interface BlockHeader {
-  number: number
+  blockNumber: number // standard is "number" but typescript and tslint prohibit that...
   hash: string
   parentHash: string
   nonce: string
