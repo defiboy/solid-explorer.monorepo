@@ -10,11 +10,3 @@ export interface Connection {
   url: string
   lastBlockProcessed?: BlockProcessed
 }
-
-// export interface Connection {
-//     _id?: string
-//     name: string
-//     url: string
-//     // transactionReceipts: Transaction[] TODO
-//     // contractInstances?: Contract[] TODO
-// }
