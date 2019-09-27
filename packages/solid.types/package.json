@@ -1,6 +1,6 @@
 {
   "name": "@solidstudio/solid.types",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Package with the types of Solid Studio",
   "main": "dist/index.js",
   "scripts": {
