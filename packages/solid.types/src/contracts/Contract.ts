@@ -1,7 +1,7 @@
 import { AbiItem } from '../contract-definitions'
 
 export interface Contract {
-  id: number
+  id?: number
   name: string
   sourceCode: string
   abi: AbiItem[]
