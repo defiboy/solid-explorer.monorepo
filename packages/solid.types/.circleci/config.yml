@@ -99,3 +99,6 @@ workflows:
             - tslint-and-format
             - unit-tests
             - npm-audit
+          filters:
+            branches:
+              only: master
