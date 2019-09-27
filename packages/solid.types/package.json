@@ -12,8 +12,8 @@
     "test:coverage": "npm run test -- --coverage",
     "check-formatting": "prettier --list-different 'src/**/*.{ts,ts,js,json}'",
     "prettier": "prettier --write 'src/**/*.{ts,tsx,js,json}'",
-    "tslint": "./node_modules/.bin/tslint -p . -c tslint.json",
-    "tslint:fix": "./node_modules/.bin/tslint -p . -c tslint.json --fix",
+    "tslint": "tslint -p . -c tslint.json",
+    "tslint:fix": "tslint -p . -c tslint.json --fix",
     "tslint:ci": "npm run tslint -- -t json -o report-lint.json"
   },
   "repository": {
