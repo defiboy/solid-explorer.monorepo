@@ -4,6 +4,7 @@ export interface ContractDefinition {
   sourceCode: string
   abi: AbiItem[]
   bytecode: string
+  runtimeBycode: string
 }
 
 export interface ContractDefinitionItem extends ContractDefinition {

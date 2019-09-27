@@ -6,7 +6,7 @@ export const buildFakeContract = ({
   id = 1,
   name = 'ERC-20',
   address = '0xAC716460A84B85d774bEa75666ddf0088b024741',
-  connectionId = 'connectionId1',
+  connectionId = 1,
   creationDate = new Date().toLocaleDateString(),
   lastExecutionDate = new Date().toLocaleDateString(),
   transactionCount = Math.floor(Math.random() * (10 - 1)) + 1,
@@ -46,7 +46,7 @@ export const buildFakeContracts = (): Contract[] => {
       id: 2,
       name: 'ERC-721',
       address: '0xAC716460A84B85d774bEa75666ddf0088b024741',
-      connectionId: 'connectionId2',
+      connectionId: 2,
       transactionCount: Math.floor(Math.random() * (10 - 1)) + 1,
       sourceCode: `pragma solidity ^0.5.3;
 

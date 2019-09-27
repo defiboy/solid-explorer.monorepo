@@ -7,7 +7,7 @@ export interface Contract {
   abi: AbiItem[]
   bytecode: string
   address: string // TODO, for ALREADY DEPLOYED is fine, but for simulation?
-  connectionId: string // TODO, for ALREADY DEPLOYED is fine, but for simulation?
+  connectionId: number // TODO, for ALREADY DEPLOYED is fine, but for simulation?
   creationDate: string
   lastExecutionDate: string
   transactionCount: number
