@@ -21,4 +21,5 @@ export interface Block extends BlockHeader {
   difficulty: number
   totalDifficulty: number
   uncles: string[]
+  connectionId: number // custom
 }

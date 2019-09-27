@@ -42,7 +42,8 @@ export const buildFakeBlock = ({
     '0x65fd378aec19b1e5302a14fac44077f4df13d5859f3fd27c86931c8ca0e5d0bd'
   ],
   transactionsRoot = '0xfe3316b06b1fad15e6e1c0e06ad2043213f36518f122ad6dff0293fe57d26d5f',
-  uncles = []
+  uncles = [],
+  connectionId = 1
 } = {}): Block => ({
   difficulty,
   extraData,
@@ -62,7 +63,8 @@ export const buildFakeBlock = ({
   totalDifficulty,
   transactions,
   transactionsRoot,
-  uncles
+  uncles,
+  connectionId
 })
 
 export const buildFakeBlocks = (): Block[] => {
@@ -70,7 +72,8 @@ export const buildFakeBlocks = (): Block[] => {
     buildFakeBlock(),
     buildFakeBlock({
       gasUsed: 646893,
-      hash: '0xdac2431708c0698b66a3a4a3ad4ba44b268df402b9350a909175d6ce6ca9004d'
+      hash: '0xdac2431708c0698b66a3a4a3ad4ba44b268df402b9350a909175d6ce6ca9004d',
+      connectionId: 1
     })
   ]
 }

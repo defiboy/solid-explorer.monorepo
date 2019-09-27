@@ -2,7 +2,7 @@ export interface ContractDefinition {
   id?: number
   name: string
   sourceCode: string
-  abi: AbiItem[]
+  abi: string//AbiItem[]
   bytecode: string
   runtimeBycode: string
 }

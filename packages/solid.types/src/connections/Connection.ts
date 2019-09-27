@@ -5,7 +5,7 @@ export interface BlockProcessed {
 }
 
 export interface Connection {
-  id: number
+  id?: number
   name: string
   url: string
   lastBlockProcessed?: BlockProcessed
