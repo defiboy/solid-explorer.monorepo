@@ -25,7 +25,8 @@ export const buildFakeContract = ({
             }
         }`,
   abi = erc20ABI,
-  bytecode = erc20Bytecode
+  bytecode = erc20Bytecode,
+  runtimeBycode = erc20Bytecode
 } = {}): Contract => ({
   id,
   name,
@@ -36,7 +37,8 @@ export const buildFakeContract = ({
   transactionCount,
   sourceCode,
   abi,
-  bytecode
+  bytecode,
+  runtimeBycode
 })
 
 export const buildFakeContracts = (): Contract[] => {
@@ -63,7 +65,8 @@ export const buildFakeContracts = (): Contract[] => {
             }
         }`,
       abi: erc721ABI,
-      bytecode: erc721Bytecode
+      bytecode: erc721Bytecode,
+      runtimeBycode: erc721Bytecode
     })
   ]
 }

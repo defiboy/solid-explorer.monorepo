@@ -6,7 +6,7 @@ export interface TransactionReceipt {
   blockNumber: number
   from: string
   to: string | null
-  contractAddress?: string // contractAddress?: string;
+  contractAddress?: string | null// contractAddress?: string;
   cumulativeGasUsed: number
   gasUsed: number
   connectionId: number // custom

@@ -3,6 +3,4 @@ export interface Connection {
   name: string
   url: string
   lastBlockNumberProcessed?: number
-  lastTransactionHashProcessed?: string
-  lastLogIndexProcessed?: number
 }
