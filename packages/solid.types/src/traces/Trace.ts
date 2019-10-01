@@ -1,4 +1,6 @@
 export interface TransactionTrace {
+  transactionHash: string
+  connectionId: number
   gas: number
   returnValue: any
   structLogs: StructLog[]
