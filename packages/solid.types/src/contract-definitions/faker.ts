@@ -17,7 +17,7 @@ export const buildFakeContractDefinition = ({
               return value;
           }
       }`,
-  abi = JSON.stringify(erc20ABI),
+  abi = erc20ABI,
   bytecode = erc20Bytecode,
   runtimeBycode = erc20Bytecode
 } = {}): ContractDefinition => ({
@@ -50,7 +50,7 @@ export const buildFakeContractDefinitions = (): ContractDefinition[] => {
             }
         }`,
       bytecode: erc721Bytecode,
-      abi: JSON.stringify(erc721ABI),
+      abi: erc721ABI,
       runtimeBycode: erc721Bytecode
     })
   ]
