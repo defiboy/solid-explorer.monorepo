@@ -28,8 +28,7 @@
     "prettier": "^1.18.2",
     "ts-jest": "^23.0.1",
     "tslint": "^5.11.0",
-    "tslint-config-prettier": "^1.14.0",
-    "typescript": "^3.0.1"
+    "tslint-config-prettier": "^1.14.0"
   },
   "jest": {
     "clearMocks": true,
@@ -62,5 +61,7 @@
     ],
     "testEnvironment": "node"
   },
-  "dependencies": {}
+  "dependencies": {
+    "typescript": "^3.6.3"
+  }
 }
