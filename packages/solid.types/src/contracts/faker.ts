@@ -47,7 +47,7 @@ export const buildFakeContracts = (): Contract[] => {
     buildFakeContract({
       id: 2,
       name: 'ERC-721',
-      address: '0xAC716460A84B85d774bEa75666ddf0088b024741',
+      address: '0xAC716460A84B85d774bEa75666ddf0088b024742',
       connectionId: 2,
       transactionCount: Math.floor(Math.random() * (10 - 1)) + 1,
       sourceCode: `pragma solidity ^0.5.3;
