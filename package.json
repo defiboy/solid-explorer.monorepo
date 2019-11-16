@@ -1,0 +1,51 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "@types/jest": "^24.0.19",
+    "@types/node": "^12.11.2",
+    "coveralls": "^3.0.7",
+    "husky": "^3.0.9",
+    "jest": "^24.1.0",
+    "jest-junit": "^9.0.0",
+    "lerna": "^3.18.2",
+    "prettier": "^1.18.2",
+    "rimraf": "^3.0.0",
+    "ts-jest": "^24.1.0",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.6.4"
+  },
+  "scripts": {
+    "compile:all": "lerna run compile",
+    "compile:sample-contracts": "lerna run compile --scope=@solidstudio/sample-contracts",
+    "compile:integration-test-utilities": "lerna run compile --scope=@solidstudio/integration-test-utilities",
+    "publish:all": "lerna publish from-package --yes",
+    "tslint:all": "lerna run tslint",
+    "tslint:server": "lerna run tslint --scope=@solidstudio/server",
+    "tslint:all:ci": "lerna run tslint -- -t json -o report-lint.json",
+    "tslint:fix:all": "lerna run tslint:fix",
+    "check-formatting:all": "lerna run check-formatting",
+    "prettier:all": "lerna run prettier",
+    "test:all": "lerna run test",
+    "test:all:coverage": "lerna run test:coverage",
+    "test:all:coverage:ci": "lerna run test:coverage:ci",
+    "test:all:watch": "lerna run test:watch",
+    "test:web3": "lerna run test --scope=@solidstudio/web3",
+    "test:server": "lerna run test --scope=@solidstudio/server",
+    "test:server:integration": "lerna run test:integration --scope=@solidstudio/server",
+    "test:event-processor": "lerna run test --scope=@solidstudio/event-processor",
+    "test:integration-test-utilities": "lerna run test --scope=@solidstudio/integration-test-utilities",
+    "test:blockchain-snapshot-creator": "lerna run test --scope=@solidstudio/blockchain-snapshot-creator",
+    "test:types": "lerna run test --scope=@solidstudio/types",
+    "test:solidity-flattener": "lerna run test --scope=@solidstudio/solidity-flattener"
+  },
+  "dependencies": {
+    "solc-wrapper": "^0.5.8"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run tslint:all && npm run check-formatting:all"
+    }
+  }
+}
