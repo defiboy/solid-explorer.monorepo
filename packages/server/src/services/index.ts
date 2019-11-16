@@ -9,7 +9,7 @@ import transactions from './transactions/transactions.service'
 // import compilerService from './compiler/compiler.service'
 // Don't remove this comment. It's needed to format import lines nicely.
 
-export default function (app: Application) {
+export default function(app: Application) {
   app.configure(connections)
   app.configure(contractDefinitions)
   app.configure(contracts)

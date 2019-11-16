@@ -4,11 +4,11 @@ import { Connection } from '@solid-explorer/types'
 
 import { Application } from '../declarations'
 
-interface ConnectionModel extends Model, Connection { }
+interface ConnectionModel extends Model, Connection {}
 
 type ConnectionModelStatic = typeof Model & (new (values?: object, options?: BuildOptions) => ConnectionModel)
 
-export default function (app: Application) {
+export default function(app: Application) {
   const sequelize: Sequelize = app.get('sequelizeClient')
 
   const connections = sequelize.define(
