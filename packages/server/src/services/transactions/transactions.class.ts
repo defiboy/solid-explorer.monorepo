@@ -1,6 +1,6 @@
 import { SequelizeServiceOptions, Service } from 'feathers-sequelize'
 
-import { Transaction } from '@solidstudio/types'
+import { Transaction } from '@solid-explorer/types'
 
 import { Application } from '../../declarations'
 

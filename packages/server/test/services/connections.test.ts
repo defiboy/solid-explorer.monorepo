@@ -1,4 +1,4 @@
-import { buildFakeConnection, Connection } from '@solidstudio/types';
+import { buildFakeConnection, Connection } from '@solid-explorer/types';
 
 import { app } from '../../src';
 

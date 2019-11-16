@@ -1,7 +1,7 @@
 // Use this hook to manipulate incoming or outgoing data.
 // For more information on hooks see: http://docs.feathersjs.com/api/hooks.html
 import { Hook, HookContext } from '@feathersjs/feathers'
-import { Contract } from '@solidstudio/types'
+import { Contract } from '@solid-explorer/types'
 
 export default (options = {}): Hook => {
   return async (context: HookContext) => {

@@ -1,24 +1,23 @@
 {
-  "name": "@solidstudio/solid.types",
-  "version": "1.2.0",
+  "name": "@solid-explorer/types",
+  "version": "1.0.0",
   "description": "Package with the types of Solid Studio",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "clean": "npm-run-all -p clean:*",
-    "clean:dist": "rimraf dist",
-    "clean:cov": "rimraf coverage",
-    "test": "jest",
-    "test:coverage": "npm run test -- --coverage",
+    "compile": "tsc",
+    "precompile": "npm run clean:lib",
+    "clean:lib": "rimraf lib",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "tslint:fix": "tslint --fix -c tslint.json -p tsconfig.json",
+    "test": "jest --runInBand --verbose",
     "check-formatting": "prettier --list-different 'src/**/*.{ts,ts,js,json}'",
     "prettier": "prettier --write 'src/**/*.{ts,tsx,js,json}'",
-    "tslint": "tslint -p . -c tslint.json",
-    "tslint:fix": "tslint -p . -c tslint.json --fix",
-    "tslint:ci": "npm run tslint -- -t json -o report-lint.json"
+    "test:coverage": "npm run test -- --reporters=default --reporters=jest-junit --coverage",
+    "test:coverage:ci": "npm run test -- --reporters=default --reporters=jest-junit --coverage --coverageReporters=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:solid-studio/solid.types.git"
+    "url": "git@github.com:solid-studio-open/solid.types.git"
   },
   "author": "Labchain",
   "devDependencies": {

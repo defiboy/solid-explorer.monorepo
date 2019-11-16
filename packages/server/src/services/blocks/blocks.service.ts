@@ -1,7 +1,7 @@
 // Initializes the `blocks` service on path `/blocks`
 import { ServiceAddons } from '@feathersjs/feathers'
 
-import { Block } from '@solidstudio/types'
+import { Block } from '@solid-explorer/types'
 
 import { Application } from '../../declarations'
 import createModel from '../../models/blocks.model'

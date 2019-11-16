@@ -6,7 +6,7 @@ import express from '@feathersjs/express'
 import feathers from '@feathersjs/feathers'
 import socketio from '@feathersjs/socketio'
 
-import configuration from '@solidstudio/electron-configuration'
+import configuration from '@feathersjs/configuration'
 
 import appHooks from './app.hooks'
 import channels from './channels'

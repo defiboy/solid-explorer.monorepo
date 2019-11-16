@@ -1,14 +1,14 @@
 import { BuildOptions, DataTypes, Model, Sequelize } from 'sequelize'
 
-import { Transaction } from '@solidstudio/types'
+import { Transaction } from '@solid-explorer/types'
 
 import { Application } from '../declarations'
 
-interface TransactionModel extends Model, Transaction {}
+interface TransactionModel extends Model, Transaction { }
 
 type TransactionModelStatic = typeof Model & (new (values?: object, options?: BuildOptions) => TransactionModel)
 
-export default function(app: Application) {
+export default function (app: Application) {
   const sequelize: Sequelize = app.get('sequelizeClient')
   const { connections } = sequelize.models
 

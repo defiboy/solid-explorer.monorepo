@@ -1,7 +1,7 @@
 import { Server } from 'http';
 import axios from 'axios';
 
-import { buildFakeConnection } from '@solidstudio/types';
+import { buildFakeConnection } from '@solid-explorer/types';
 
 import { startServer, getUrl } from './utils'
 

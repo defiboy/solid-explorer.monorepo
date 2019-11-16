@@ -1,6 +1,6 @@
 import { Paginated } from '@feathersjs/feathers';
 
-import { buildFakeBlock, Block, buildFakeConnection, Connection } from '@solidstudio/types';
+import { buildFakeBlock, Block, buildFakeConnection, Connection } from '@solid-explorer/types';
 
 import { app } from '../../src';
 

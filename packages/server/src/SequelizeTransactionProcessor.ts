@@ -2,8 +2,8 @@ import { Application } from '@feathersjs/feathers'
 import { Service } from 'feathers-sequelize'
 import { Sequelize } from 'sequelize'
 
-import { BlockData, ITransactionProcessor } from '@solidstudio/event-processor'
-import { Block, Connection, Contract, ContractDefinition, Transaction, TransactionReceipt } from '@solidstudio/types'
+import { BlockData, ITransactionProcessor } from '@solid-explorer/event-processor'
+import { Block, Connection, Contract, ContractDefinition, Transaction, TransactionReceipt } from '@solid-explorer/types'
 
 export class SequelizeTransactionProcessor implements ITransactionProcessor {
   private readonly sequelize: Sequelize

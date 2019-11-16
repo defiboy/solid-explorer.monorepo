@@ -1,0 +1,48 @@
+{
+  "name": "@solid-explorer/event-processor",
+  "version": "1.0.0",
+  "description": "Solid Studio event processor",
+  "keywords": [
+    "ethereum"
+  ],
+  "author": "Solid Studio <solidstudio@labchain.io>",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solid-studio-open/solid.monorepo.git"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "precompile": "npm run clean:lib",
+    "clean:lib": "rimraf lib",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "tslint:fix": "tslint --fix -c tslint.json -p tsconfig.json",
+    "pretest": "npm run compile",
+    "test": "jest --verbose --debug --runInBand --detectOpenHandles --forceExit",
+    "check-formatting": "prettier --list-different 'src/**/*.{ts,ts,js,json}'",
+    "prettier": "prettier --write 'src/**/*.{ts,tsx,js,json}'",
+    "test:coverage": "npm run test -- --reporters=default --reporters=jest-junit --coverage",
+    "test:coverage:ci": "npm run test -- --reporters=default --reporters=jest-junit --coverage --coverageReporters=text-lcov | coveralls"
+  },
+  "dependencies": {
+    "@solidstudio/async-polling": "^1.1.0",
+    "@solid-explorer/web3": "^1.0.0",
+    "bottleneck": "^2.19.5"
+  },
+  "devDependencies": {
+    "@solid-explorer/types": "^1.0.0",
+    "dotenv": "^8.2.0",
+    "web3-utils": "^1.2.2"
+  }
+}

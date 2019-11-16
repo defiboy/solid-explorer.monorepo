@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import { startServer, getUrl } from './utils'
 
-describe('@solidstudio/server', () => {
+describe('@solid-explorer/server', () => {
     let server: Server
 
     beforeAll(async () => {

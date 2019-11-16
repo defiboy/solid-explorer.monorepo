@@ -1,7 +1,7 @@
 import { Params } from 'express-serve-static-core'
 import { SequelizeServiceOptions, Service } from 'feathers-sequelize'
 
-import { Connection } from '@solidstudio/types'
+import { Connection } from '@solid-explorer/types'
 
 import { Application } from '../../declarations'
 

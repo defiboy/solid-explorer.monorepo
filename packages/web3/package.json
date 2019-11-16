@@ -1,0 +1,36 @@
+{
+  "name": "@solid-explorer/web3",
+  "version": "1.0.0",
+  "description": "Solid Studio web3",
+  "keywords": [
+    "ethereum"
+  ],
+  "author": "Solid Studio <solidstudio@labchain.io>",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "compile": "tsc",
+    "precompile": "npm run clean:lib",
+    "clean:lib": "rimraf lib",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "tslint:fix": "tslint --fix -c tslint.json -p tsconfig.json",
+    "test": "jest --runInBand --verbose",
+    "check-formatting": "prettier --list-different 'src/**/*.{ts,ts,js,json}'",
+    "prettier": "prettier --write 'src/**/*.{ts,tsx,js,json}'",
+    "test:coverage": "npm run test -- --reporters=default --reporters=jest-junit --coverage",
+    "test:coverage:ci": "npm run test -- --reporters=default --reporters=jest-junit --coverage --coverageReporters=text-lcov | coveralls"
+  },
+  "dependencies": {
+    "ethers": "^4.0.39"
+  },
+  "devDependencies": {
+    "@solid-explorer/types": "^1.0.0"
+  }
+}

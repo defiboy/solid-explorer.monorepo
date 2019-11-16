@@ -1,6 +1,6 @@
 import { BuildOptions, DataTypes, Model, Sequelize } from 'sequelize'
 
-import { TransactionTrace } from '@solidstudio/types'
+import { TransactionTrace } from '@solid-explorer/types'
 
 import { Application } from '../declarations'
 

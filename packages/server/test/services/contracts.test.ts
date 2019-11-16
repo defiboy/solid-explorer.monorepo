@@ -1,6 +1,6 @@
 import { Paginated } from '@feathersjs/feathers';
 
-import { Contract, buildFakeContract, buildFakeConnection, Connection } from '@solidstudio/types';
+import { Contract, buildFakeContract, buildFakeConnection, Connection } from '@solid-explorer/types';
 
 import { app } from '../../src';
 

@@ -1,4 +1,4 @@
-import { buildFakeTransaction, Transaction, buildFakeConnection, Connection } from '@solidstudio/types';
+import { buildFakeTransaction, Transaction, buildFakeConnection, Connection } from '@solid-explorer/types';
 
 import { app } from '../../src';
 import { Paginated } from '@feathersjs/feathers';

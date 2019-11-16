@@ -2,8 +2,8 @@
 // For more information on hooks see: http://docs.feathersjs.com/api/hooks.html
 import { Hook, HookContext } from '@feathersjs/feathers'
 
-import { IBlockchainSynchronizer } from '@solidstudio/event-processor'
-import { Connection } from '@solidstudio/types'
+import { IBlockchainSynchronizer } from '@solid-explorer/event-processor'
+import { Connection } from '@solid-explorer/types'
 
 export default (options = {}): Hook => {
   return async (context: HookContext) => {

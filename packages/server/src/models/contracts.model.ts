@@ -1,6 +1,6 @@
 import { BuildOptions, DataTypes, Model, Sequelize } from 'sequelize'
 
-import { Contract } from '@solidstudio/types'
+import { Contract } from '@solid-explorer/types'
 
 import { Application } from '../declarations'
 

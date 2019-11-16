@@ -1,6 +1,6 @@
 import { SequelizeServiceOptions, Service } from 'feathers-sequelize'
 
-import { ContractDefinition } from '@solidstudio/types'
+import { ContractDefinition } from '@solid-explorer/types'
 
 import { Application } from '../../declarations'
 

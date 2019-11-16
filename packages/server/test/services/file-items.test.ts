@@ -1,4 +1,4 @@
-import { buildFakeFileItem } from '@solidstudio/types';
+import { buildFakeFileItem } from '@solid-explorer/types';
 
 import { app } from '../../src';
 
