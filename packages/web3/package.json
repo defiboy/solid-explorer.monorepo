@@ -1,6 +1,6 @@
 {
   "name": "@solid-explorer/web3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Solid Studio web3",
   "keywords": [
     "ethereum"
@@ -34,7 +34,7 @@
     "ethers": "^4.0.39"
   },
   "devDependencies": {
-    "@solid-explorer/types": "^1.0.0"
+    "@solid-explorer/types": "^1.0.1"
   },
   "gitHead": "6542b4ed783dc144e70be15502168c492e41e78a"
 }

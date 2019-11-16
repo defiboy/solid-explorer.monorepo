@@ -1,6 +1,6 @@
 {
   "name": "@solid-explorer/server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Server implementation for Solid Studio",
   "keywords": [
     "solidstudio",
@@ -39,8 +39,8 @@
     "@feathersjs/express": "^4.3.7",
     "@feathersjs/feathers": "^4.3.7",
     "@feathersjs/socketio": "^4.3.7",
-    "@solid-explorer/event-processor": "^1.0.0",
-    "@solid-explorer/web3": "^1.0.0",
+    "@solid-explorer/event-processor": "^1.0.1",
+    "@solid-explorer/web3": "^1.0.1",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
     "feathers-nedb": "^5.1.0",
@@ -54,7 +54,7 @@
   },
   "devDependencies": {
     "@feathersjs/configuration": "^4.3.7",
-    "@solid-explorer/types": "^1.0.0",
+    "@solid-explorer/types": "^1.0.1",
     "@types/bluebird": "^3.5.28",
     "@types/compression": "^1.0.1",
     "@types/cors": "^2.8.6",
