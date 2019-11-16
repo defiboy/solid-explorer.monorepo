@@ -12,7 +12,7 @@ export interface BlockHeader {
   gasLimit: number
   gasUsed: number
   timestamp: number | string
-  receiptRoot: string
+  receiptsRoot: string
 }
 
 export interface Block extends BlockHeader {

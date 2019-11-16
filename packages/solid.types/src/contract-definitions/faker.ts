@@ -1,4 +1,4 @@
-import { ContractDefinition, AbiItem } from './ContractDefinitions'
+import { AbiItem, ContractDefinition } from './ContractDefinitions'
 
 export const buildFakeContractDefinition = ({
   id = 1,
@@ -19,14 +19,18 @@ export const buildFakeContractDefinition = ({
       }`,
   abi = erc20ABI,
   bytecode = erc20Bytecode,
-  runtimeBycode = erc20Bytecode
+  runtimeBycode = erc20Bytecode,
+  sourceMap = '26:415:19:-;;132:2:-1;166:7;155:9;146:7;137:37;252:7;246:14;243:1;238:23;232:4;229:33;270:1;265:20;;;;222:63;;265:20;274:9;222:63;;298:9;295:1;288:20;328:4;319:7;311:22;352:7;343;336:24',
+  deployedSourceMap = '26:415:19:-;;;;;;;;'
 } = {}): ContractDefinition => ({
   id,
   name,
   sourceCode,
   abi,
   bytecode,
-  runtimeBycode
+  runtimeBycode,
+  sourceMap,
+  deployedSourceMap
 })
 
 export const buildFakeContractDefinitions = (): ContractDefinition[] => {

@@ -6,7 +6,7 @@ export interface Transaction {
   transactionIndex: number | null
   from: string
   to: string | null
-  value: string // TODO?
+  value: string
   gasPrice: string
   gas: number
   input: string

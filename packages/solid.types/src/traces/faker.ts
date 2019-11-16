@@ -1,4 +1,4 @@
-import { TransactionTrace, StructLog } from './Trace'
+import { StructLog, TransactionTrace } from './Trace'
 
 const buildFakeLogs = (): StructLog[] => {
   return [
