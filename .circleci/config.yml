@@ -107,6 +107,7 @@ workflows:
           requires:
             - setup
       - publish:
+          context: SolidStudio
           requires:
             - tslint-and-format
             - tests
