@@ -32,5 +32,6 @@
   },
   "devDependencies": {
     "@solid-explorer/types": "^1.0.0"
-  }
+  },
+  "gitHead": "e1c70b09b5a06f6242dd58caf784b619e952b7e2"
 }

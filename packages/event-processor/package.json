@@ -36,13 +36,14 @@
     "test:coverage:ci": "npm run test -- --reporters=default --reporters=jest-junit --coverage --coverageReporters=text-lcov | coveralls"
   },
   "dependencies": {
-    "@solidstudio/async-polling": "^1.1.0",
     "@solid-explorer/web3": "^1.0.0",
+    "@solidstudio/async-polling": "^1.1.0",
     "bottleneck": "^2.19.5"
   },
   "devDependencies": {
     "@solid-explorer/types": "^1.0.0",
     "dotenv": "^8.2.0",
     "web3-utils": "^1.2.2"
-  }
+  },
+  "gitHead": "e1c70b09b5a06f6242dd58caf784b619e952b7e2"
 }
