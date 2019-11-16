@@ -36,6 +36,7 @@
     "test:coverage:ci": "npm run test -- --reporters=default --reporters=jest-junit --coverage --coverageReporters=text-lcov | coveralls"
   },
   "dependencies": {
+    "@feathersjs/configuration": "^4.3.11",
     "@feathersjs/express": "^4.3.7",
     "@feathersjs/feathers": "^4.3.7",
     "@feathersjs/socketio": "^4.3.7",
@@ -53,7 +54,6 @@
     "winston": "^3.2.1"
   },
   "devDependencies": {
-    "@feathersjs/configuration": "^4.3.7",
     "@solid-explorer/types": "^1.0.1",
     "@types/bluebird": "^3.5.28",
     "@types/compression": "^1.0.1",
