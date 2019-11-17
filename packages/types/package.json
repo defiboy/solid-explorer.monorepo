@@ -2,7 +2,22 @@
   "name": "@solid-explorer/types",
   "version": "1.1.0",
   "description": "Package with the types of Solid Studio",
+  "keywords": [
+    "ethereum"
+  ],
+  "author": "Solid Studio <solidstudio@labchain.io>",
+  "license": "ISC",
   "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "compile": "tsc",
     "precompile": "npm run clean:lib",
@@ -15,14 +30,6 @@
     "test:coverage": "npm run test -- --reporters=default --reporters=jest-junit --coverage",
     "test:coverage:ci": "npm run test -- --reporters=default --reporters=jest-junit --coverage --coverageReporters=text-lcov | coveralls"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:solid-studio-open/solid.types.git"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "author": "Labchain",
   "devDependencies": {
     "@types/jest": "^23.3.1",
     "@types/node": "^10.5.5",
@@ -31,37 +38,6 @@
     "ts-jest": "^23.0.1",
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.14.0"
-  },
-  "jest": {
-    "clearMocks": true,
-    "collectCoverageFrom": [
-      "src/*.{ts,js}",
-      "src/**/*.{ts,js}",
-      "!types/**",
-      "!test/**",
-      "!src/index.ts"
-    ],
-    "coverageThreshold": {
-      "global": {
-        "statements": 0,
-        "branches": 0,
-        "functions": 0,
-        "lines": 0
-      }
-    },
-    "transform": {
-      "^.+\\.tsx?$": "ts-jest"
-    },
-    "testRegex": ".*test.ts",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ],
-    "testEnvironment": "node"
   },
   "dependencies": {
     "typescript": "^3.6.3"
