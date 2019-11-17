@@ -1,1 +1,1 @@
-# `@solidstudio-open/event-processor`
+# `@solid-explorer/event-processor`

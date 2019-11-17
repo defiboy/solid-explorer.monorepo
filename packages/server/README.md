@@ -1,1 +1,2 @@
-# Solid Studio Server
+# `@solid-explorer/server`
+

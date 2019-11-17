@@ -1,4 +1,4 @@
-# solid.types
+# `@solid-explorer/types`
 
 Package with the types of Solid Studio
 
