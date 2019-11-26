@@ -1,6 +1,7 @@
 import { TransactionReceipt } from './TransactionReceipt'
 
 export const buildFakeTransactionReceipt = ({
+  id = 1,
   connectionId = 1,
   blockHash = '0xfac2431708c0698b66a3a4a3ad4ba44b268df402b9350a909175d6ce6ca9004f',
   blockNumber = 646892,
@@ -14,6 +15,7 @@ export const buildFakeTransactionReceipt = ({
   transactionIndex = 0
 } = {}): TransactionReceipt => {
   return {
+    id,
     connectionId,
     blockHash,
     blockNumber,
@@ -32,6 +34,7 @@ export const buildFakeTransactionReceipts = (): TransactionReceipt[] => {
   return [
     buildFakeTransactionReceipt(),
     {
+      id: 2,
       connectionId: 1,
       blockHash: '0xdac2431708c0698b66a3a4a3ad4ba44b268df402b9350a909175d6ce6ca9004d',
       blockNumber: 646893,

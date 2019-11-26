@@ -1,6 +1,7 @@
 import { Transaction } from './Transaction'
 
 export const buildFakeTransaction = ({
+  id = 1,
   hash = '0xdac2431708c0698b66a3a4a3ad4ba44b268df402b9350a909175d6ce6ca9004f',
   nonce = 1,
   blockHash = '0xfac2431708c0698b66a3a4a3ad4ba44b268df402b9350a909175d6ce6ca9004f',
@@ -15,6 +16,7 @@ export const buildFakeTransaction = ({
   connectionId = 1
 } = {}): Transaction => ({
   hash,
+  id,
   nonce,
   blockHash,
   blockNumber,
@@ -34,7 +36,8 @@ export const buildFakeTransactions = (): Transaction[] => {
     buildFakeTransaction({
       blockNumber: 646895,
       transactionIndex: 1,
-      connectionId: 2
+      connectionId: 2,
+      id: 2
     })
   ]
 }
