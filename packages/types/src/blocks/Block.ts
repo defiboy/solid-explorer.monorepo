@@ -16,6 +16,7 @@ export interface BlockHeader {
 }
 
 export interface Block extends BlockHeader {
+  id: number
   transactions: string[] // array with hash of transactions
   size: number
   difficulty: number

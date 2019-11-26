@@ -2,6 +2,7 @@ import { Block } from './Block'
 
 export const buildFakeBlock = ({
   difficulty = 54831103175033,
+  id = 1,
   extraData = '0xd783010406844765746887676f312e342e32856c696e7578',
   gasLimit = 4712388,
   gasUsed = 3059685,
@@ -45,6 +46,7 @@ export const buildFakeBlock = ({
   uncles = [],
   connectionId = 1
 } = {}): Block => ({
+  id,
   difficulty,
   extraData,
   gasLimit,
@@ -73,7 +75,8 @@ export const buildFakeBlocks = (): Block[] => {
     buildFakeBlock({
       gasUsed: 646893,
       hash: '0xdac2431708c0698b66a3a4a3ad4ba44b268df402b9350a909175d6ce6ca9004d',
-      connectionId: 1
+      connectionId: 1,
+      id: 2
     })
   ]
 }
