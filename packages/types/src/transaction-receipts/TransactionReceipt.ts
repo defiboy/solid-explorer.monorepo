@@ -1,5 +1,5 @@
 export interface TransactionReceipt {
-  id: number
+  id?: number
   status: boolean
   transactionHash: string // or hash
   transactionIndex: number //

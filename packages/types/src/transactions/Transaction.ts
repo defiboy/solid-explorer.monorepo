@@ -1,5 +1,5 @@
 export interface Transaction {
-  id: number
+  id?: number
   hash: string
   nonce: number
   blockHash: string | null
