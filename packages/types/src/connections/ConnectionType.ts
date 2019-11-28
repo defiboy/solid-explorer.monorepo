@@ -1,10 +1,10 @@
 export enum ConnectionType {
-    Private = 'Private',
-    Public = 'Public'
+  Private = 'Private',
+  Public = 'Public'
 }
 
 export enum PublicChainId {
-    XDai = 'XDai',
-    Goerli = 'Goerli',
-    MainNet = 'MainNet'
+  XDai = 'XDai',
+  Goerli = 'Goerli',
+  MainNet = 'MainNet'
 }
