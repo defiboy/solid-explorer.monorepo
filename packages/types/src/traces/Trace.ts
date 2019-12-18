@@ -1,4 +1,5 @@
 export interface TransactionTrace {
+  id: number
   transactionHash: string
   connectionId: number
   gas: number
